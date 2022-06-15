@@ -1,0 +1,350 @@
+body {
+    --primary-color: #1e88e9;
+    --secondary-color: #212529;
+    --text-color: #575656;
+    --dark-bg: #282d33;
+    --gray-bg: #e4e4e4;
+    --white-bg: white;
+    --border-color: #525252;
+    --item-bg: #f1f1f1;
+    --overlay-bg: white;
+    --bg-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/Desktop\ app\ 1.jpg) no-repeat center;
+    --bg-navbar: rgba(0, 0, 0, 0.55);
+}
+
+.dark {
+    --text-color: white;
+    --white-bg: transparent;
+    --gray-bg: transparent;
+    --item-bg: rgb(78 78 78 / 60%);
+    --secondary-color: white;
+    --overlay-bg: #282d33;
+    --bg-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url(../img/Desktop\ app\ 1\ dark.jpg) no-repeat center;
+    --bg-navbar: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth !important;
+    caret-color: transparent;
+}
+
+.transparent-bg {
+    background-color: transparent !important;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto !important;
+}
+
+.small-wrapper {
+    max-width: 1000px;
+    margin: 10px auto 70px;
+}
+
+.button {
+    color: var(--text-color);
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    height: 50px;
+    min-width: 135px;
+    border-radius: 25px;    
+    transition-duration: 0.5s;
+}
+
+.button:hover {
+    color: white;
+    background-color: #016aca;
+}
+
+.btn-active {
+    background-color: var(--primary-color) !important;
+    color: white;
+}
+
+.circle-wrapper {
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    text-align: center;
+    color: white;
+}
+
+.pd-0 {
+    padding: 0 !important; 
+}
+
+.pd-20 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.pt-90 {
+    padding-top: 90px !important;
+}
+
+.pb-90 {
+    padding-bottom: 90px !important;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-26 {
+    margin-bottom: 26px;
+}
+
+.bg-gray {
+    background-color: #727272;
+}
+
+.center-align {
+    justify-content: center;
+}
+
+.overlay, 
+.full-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    display: none;
+    animation: zoomDisplay 0.3s linear;
+}
+
+.full-overlay {
+    padding: 28px;
+    position: fixed;
+    /* display: none; */
+    z-index: 10;
+}
+
+.close-wrapper {
+    padding: 7px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ccc;
+}
+
+.close-btn {
+    background-color: #af0000;
+    color: white;
+    border-radius: 5px;
+}
+
+.close-overlay {
+    animation: zoomClose 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+.open-overlay {
+    display: flex;
+}
+
+.from-bottom.show {
+    transform: translateY(0);
+    animation: FromBottomDisplay 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.from-bottom, .from-right {
+    opacity: 0;
+}
+
+.from-right.show {
+    transform: translateX(0);
+    /* opacity: 1; */
+    animation: FromRightDisplay 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.from-scale-0.show {
+    animation: zoomDisplay 1.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.hide-fade {
+    animation: HideFade 1s ease-in-out !important;
+    animation-fill-mode: forwards !important;
+    transition-duration: display 1s;
+}
+
+.show-fade {
+    animation: ShowFade 1s ease-in-out !important;
+    animation-fill-mode: forwards !important;
+    transition-duration: display 1s;
+}
+
+.fade-height {
+    transition: 0.5s !important;
+}
+
+@keyframes closeOverlay {
+    0% {
+        transform: scale(1);
+    }
+    99% {
+        transform: scale(0);
+    }
+    100% {
+        display: none;
+    }
+}
+
+@keyframes zoomDisplay {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomClose {
+    from {
+        
+    }
+    to {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes FromBottomDisplay {
+    from {
+        opacity: 0;
+        transform: translateY(50%)
+    }
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+@keyframes FromRightDisplay {
+    from {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes HideFade {
+    0% {
+        /* display: block; */
+        opacity: 1;
+        transform: none;
+    }
+    99% {
+        /* transform: translateY(50%); */
+        transform: scale(0);
+        display: block;
+    }
+    100% {
+        /* display: none !important; */
+        opacity: 0;
+        position: absolute;
+        z-index: 0;
+    }
+
+}
+
+@keyframes ShowFade {
+    0% {
+        display: none;
+        opacity: 0;
+        /* transform: translateY(50%); */
+        transform: scale(0);
+    }
+    99% {
+        display: none;
+        /* transform: translateY(0); */
+        transform: scale(1);
+    }
+    100% {
+        display: block !important;
+        opacity: 1;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+.loader {
+    margin: auto;
+    border: 7px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 7px solid #3498db;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .loader-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+    display: flex;
+  }
+
+  @keyframes ZoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes DisplayFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+

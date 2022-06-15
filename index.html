@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My CV</title>
+    <link rel="shortcut icon" href="img/icon 1.ico"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+    <!-- BOOTSTRAP 5.1.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body id='body' data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" tabindex="0">
+    <div class="loader-overlay" id='loader'>
+        <div class="loader"></div>
+    </div>
+    <div class="skin-mode">
+        <i class="fas fa-moon" title="Dark Mode"></i>
+    </div>
+    <div class="app-container" id='app'>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-fixed my-bg-dark" id="navbar">
+            <div class="container-fluid wrapper">
+                <a href="#"><img class="navbar-brand logo" href="#" src="img/Logo.png"></img></a>
+                <button class="navbar-toggler cv-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse navbar-right fade-height" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link cv-link" href="#home"><i class="fas fa-home"></i>HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cv-link" href="#about"><i class="fas fa-info-circle"></i>ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cv-link" href="#resume"><i class="fas fa-id-card"></i>RESUMES</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link cv-link" href="#skills"><i class="fas fa-tools"></i>SKILLS</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link cv-link" href="#services"><i class="fas fa-user-cog"></i>SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cv-link" href="#portfolio"><i class="fas fa-briefcase"></i>PORTFOLIO</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link cv-link" href="#clients"><i class="fas fa-user-friends"></i>TESTIMONIAL</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link cv-link" href="#contact"><i class="fas fa-address-book"></i>CONTACT</a>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- BANNER -->
+        <div class="banner" id="home">
+            <div class="introduce">
+                <h1 class="introduce__name">
+                    DANG TUAN DUONG
+                </h1>
+                <h2 class="introduce__job">
+                    Designer, Developer
+                </h2>
+                <a class="button introduce__btn" href="#contact">
+                    HIRE ME NOW
+                </a>
+            </div>
+        </div>
+        <!-- END BANNER -->
+
+        <!-- ABOUT -->
+        <div class="container-fluid col py-3 about" id="about">
+            <div class="row wrapper">
+                <div class="col-sm-12">
+                    <h1 class="title">ABOUT ME</h1>
+                    <div class="small-wrapper info-container">
+                        <div class="row info-wrapper show-on-scroll from-bottom" animation-delay="0s">
+                            <div class="col-6 col-md-3">
+                                <div class="info">
+                                    <i class="fas fa-birthday-cake circle-wrapper"></i>
+                                    <span>Birthday</span>
+                                    <span>July 30, 1989</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="info">
+                                    <i class="fas fa-mobile-alt circle-wrapper"></i>
+                                    <span>Phone</span>
+                                    <span>0987654321</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="info">
+                                    <i class="far fa-envelope circle-wrapper"></i>
+                                    <span>Email</span>
+                                    <span>july30dtd@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <div class="info">
+                                    <i class="fas fa-map-marker circle-wrapper"></i>
+                                    <span>Address</span>
+                                    <span>Hanoi, Vietnam</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- info detail -->
+                    <div class="wrapper">
+                        <div class="row info-detail show-on-scroll from-scale-0">
+                            <div class="col-md-6 pd-0">
+                                <img class="info-img" src='img/Desktop app 1.jpg'></img>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="info-content pd-20">
+                                    <h4>Why should you choose my services?</h4> 
+                                    <span class="advantage">
+                                        I am a professional developer, designer. 
+                                        Nam nec tellus a odio tincidunt auctor
+                                        a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. 
+                                        Class aptent taciti sociosqu ad litora torquent per conubia nostra. 
+                                    </span>
+                                    <span class="advantage"><i class="far fa-check-circle"></i>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</span>
+                                    <span class="advantage"><i class="far fa-check-circle"></i>Quibusdam animi necessitatibus, magnam eveniet praesentium quidem in eaque voluptatem fuga.</span>
+                                    <span class="advantage"><i class="far fa-check-circle"></i>Quibusdam animi necessitatibus, magnam eveniet praesentium quidem in eaque voluptatem fuga.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HOBBIES -->
+                    <div class="small-title">
+                        <h3>HOBBIES</h3>
+                    </div>
+                    <div class="small-wrapper hobbies-container">
+                        <div class="row hobbies-wrapper show-on-scroll from-bottom" animation-delay="0s">
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <div class="info hobbies">
+                                    <i class="fas fa-gamepad circle-wrapper"></i>
+                                    <span>Games</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <div class="info hobbies">
+                                    <i class="fas fa-book-open circle-wrapper"></i>
+                                    <span>Reading</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <div class="info hobbies">
+                                    <i class="far fa-futbol circle-wrapper"></i>
+                                    <span>Sport</span>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-3">
+                                <div class="info hobbies">
+                                    <i class="fas fa-plane circle-wrapper"></i>
+                                    <span>Travelling</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END HOBBIES -->
+                </div>
+            </div>
+        </div>
+        <!-- END ABOUT -->
+
+        <!-- RESUME -->
+        <div class="container-fluid col py-3 resume" id="resume">
+            <div class="row pt-90">
+                <div class="col-sm-12">
+                    <h1 class="title">RESUME</h1>
+
+                    <!-- EXPERIENCE -->
+                    <div class="small-title">
+                        <h3>EXPERIENCES</h3>
+                        <i class="fas fa-suitcase"></i>
+                    </div>
+                    <div class="wrapper">
+                        <div class="row">
+                            <!-- Column -->
+                            <div class="col-sm-6 mb-30 pd-20 show-on-scroll from-right" animation-delay="0s">
+                                <div class="resume-wrapper">
+                                    <h5 class="resume__time">
+                                        2018-now</h5>
+                                    <h4 class="resume__job">
+                                        Developer</h4>
+                                    <p class="resume__description">
+                                        Exercitationem placeat, optio harum suscipit quasi ducimus 
+                                        doloribus architecto saepe, enim quae earum autem illum culpa 
+                                        soluta perferendis temporibus repellendus recusandae nulla.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                            <div class="col-sm-6 mb-30 pd-20 show-on-scroll from-right" animation-delay="0.2s">
+                                <div class="resume-wrapper">
+                                    <h5 class="resume__time">
+                                        2016-2018</h5>
+                                    <h4 class="resume__job">
+                                        Designer</h4>
+                                    <p class="resume__description">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Quos qui vero sapiente amet ratione? Cumque magni quos 
+                                        veritatis molestias tempore illo temporibus illum, recusandae 
+                                        deleniti nesciunt suscipit repellat incidunt nihil.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                            <div class="col-sm-6 mb-30 pd-20 show-on-scroll from-right" animation-delay="0.4s">
+                                <div class="resume-wrapper">
+                                    <h5 class="resume__time">
+                                        2014-2016</h5>
+                                    <h4 class="resume__job">
+                                        Freelancer Developer</h4>
+                                    <p class="resume__description">
+                                        Exercitationem placeat, optio harum suscipit quasi ducimus 
+                                        doloribus architecto saepe, enim quae earum autem illum culpa 
+                                        soluta perferendis temporibus repellendus recusandae nulla.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                            <div class="col-sm-6 mb-30 pd-20 show-on-scroll from-right" animation-delay="0.6s">
+                                <div class="resume-wrapper">
+                                    <h5 class="resume__time">
+                                        2012-2014</h5>
+                                    <h4 class="resume__job">
+                                        Freelancer Designer</h4>
+                                    <p class="resume__description">
+                                        Exercitationem placeat, optio harum suscipit quasi ducimus 
+                                        doloribus architecto saepe, enim quae earum autem illum culpa 
+                                        soluta perferendis temporibus repellendus recusandae nulla.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END EXPERIENCE -->
+
+                    <!-- EDUCATIONS -->
+                    <div class="small-title">
+                        <h3>EDUCATIONS</h3>
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="wrapper pb-90">
+                        <div class="row">
+                            <!-- Column -->
+                            <div class="col-sm-6 mb-30 pd-20 show-on-scroll from-right" animation-delay="0s">
+                                <div class="resume-wrapper">
+                                    <h5 class="resume__time">
+                                        2010-2012</h5>
+                                    <h4 class="resume__job">
+                                        Master Designer</h4>
+                                    <p class="resume__description">
+                                        Exercitationem placeat, optio harum suscipit quasi ducimus 
+                                        doloribus architecto saepe, enim quae earum autem illum culpa 
+                                        soluta perferendis temporibus repellendus recusandae nulla.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                            <div class="col-sm-6 mb-30 pd-20 show-on-scroll from-right" animation-delay="0.2s">
+                                <div class="resume-wrapper">
+                                    <h5 class="resume__time">
+                                        2009-2010</h5>
+                                    <h4 class="resume__job">
+                                        Student Designer</h4>
+                                    <p class="resume__description">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                        Porro alias sit, eum, deserunt dolor maxime voluptatum 
+                                        dicta itaque earum repellat, id similique! Et adipisci 
+                                        provident nulla, corporis numquam deleniti reprehenderit.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                            <div class="col-sm-6 mb-30 pd-20 show-on-scroll from-right"animation-delay="0.4s">
+                                <div class="resume-wrapper">
+                                    <h5 class="resume__time">
+                                        2008-2009</h5>
+                                    <h4 class="resume__job">
+                                        Master Developer</h4>
+                                    <p class="resume__description">
+                                        Exercitationem placeat, optio harum suscipit quasi ducimus 
+                                        doloribus architecto saepe, enim quae earum autem illum culpa 
+                                        soluta perferendis temporibus repellendus recusandae nulla.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Column -->
+                            <div class="col-sm-6 mb-30 pd-20 show-on-scroll from-right" animation-delay="0.6s">
+                                <div class="resume-wrapper">
+                                    <h5 class="resume__time">
+                                        2007-2008</h5>
+                                    <h4 class="resume__job">
+                                        Student</h4>
+                                    <p class="resume__description">
+                                        Exercitationem placeat, optio harum suscipit quasi ducimus 
+                                        doloribus architecto saepe, enim quae earum autem illum culpa 
+                                        soluta perferendis temporibus repellendus recusandae nulla.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- END EDUCATION -->
+                </div>
+            </div>
+        </div>
+        
+        <!-- SKILLS -->
+        <div class="container-fluid col py-3" id="skills"> 
+            <div class="row pt-90">
+                <div class="col-sm-12">
+                    <h1 class="title skill-title">SKILLS</h1>
+                
+                    <div class="small-wrapper skill-container show-on-scroll from-scale-0">
+                        <div class="row">
+                            <!-- column -->
+                            <div class="col-6 col-sm-3">
+                                <div class="skill-wrapper">
+                                    <i class="fab fa-html5"></i>
+                                    <h3>HTML</h3>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-6 col-sm-3">
+                                <div class="skill-wrapper">
+                                    <i class="fab fa-css3"></i>
+                                    <h3>CSS</h3>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-6 col-sm-3">
+                                <div class="skill-wrapper">
+                                    <i class="fab fa-js"></i>
+                                    <h3>Javascript</h3>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-6 col-sm-3">
+                                <div class="skill-wrapper">
+                                    <i class="fab fa-java"></i>
+                                    <h3>Java</h3>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-6 col-sm-3">
+                                <div class="skill-wrapper">
+                                    <i class="fab fa-react"></i>
+                                    <h3>React JS</h3>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-6 col-sm-3">
+                                <div class="skill-wrapper">
+                                    <i class="fab fa-angular"></i>
+                                    <h3>Angular</h3>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-6 col-sm-3">
+                                <div class="skill-wrapper">
+                                    <i class="fab fa-wordpress"></i>
+                                    <h3>Wordpress</h3>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-6 col-sm-3">
+                                <div class="skill-wrapper">
+                                    <i class="fas fa-pencil-alt"></i>
+                                    <h3>Design</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SKILLS -->
+
+        <!-- SERVICES -->
+        <div class="container-fluid col py-3 services" id="services">
+            <div class="row pt-90">
+                <div class="col-sm-12">
+                    <h1 class="title">SERVICES</h1>
+                    <div class="wrapper pb-90">
+                        <div class="row">
+                            <!-- column -->
+                            <div class="col-sm-6 col-md-4 mb-30 pd-20 show-on-scroll from-bottom" animation-delay="0s">
+                                <div class="service-wrapper">
+                                    <div class="service-text">
+                                        <i class="fab fa-windows"></i>
+                                        <h2>Window App</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Perferendis, similique beatae reprehenderit, atque totam 
+                                            amet distinctio quod nostrum molestiae soluta aliquam
+                                        </p>
+                                    </div>
+                                    <button class="button service-btn">Book now</button>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-sm-6 col-md-4 mb-30 pd-20 show-on-scroll from-bottom" animation-delay="0.2s">
+                                <div class="service-wrapper">
+                                    <div class="service-text">
+                                        <i class="fas fa-mobile-alt"></i>
+                                        <h2>Mobile App</h2>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                            Hic incidunt sint minus est! Possimus, dicta! Ratione qui, 
+                                            fugit accusantium praesentium officia.                                           
+                                        </p>
+                                    </div>
+                                    <button class="button service-btn">Book now</button>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-sm-6 col-md-4 mb-30 pd-20 show-on-scroll from-bottom" animation-delay="0.4s">
+                                <div class="service-wrapper">
+                                    <div class="service-text">
+                                        <i class="fas fa-marker"></i>
+                                        <h2>Designing</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Non recusandae omnis qui sequi totam. Doloremque deserunt 
+                                            omnis odio nemo facilis ipsum voluptas temporibus, itaque 
+                                           cupiditate. Aut voluptatibus commodi sint eveniet!
+                                        </p>
+                                    </div>
+                                    <button class="button service-btn">Book now</button>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-sm-6 col-md-4 mb-30 pd-20 show-on-scroll from-bottom" animation-delay="0s">
+                                <div class="service-wrapper">
+                                    <div class="service-text">
+                                        <i class="fas fa-video"></i>
+                                        <h2>Video editing</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Perferendis, similique beatae reprehenderit, atque totam 
+                                            amet distinctio quod nostrum molestiae soluta aliquam
+                                        </p>
+                                    </div>
+                                    <button class="button service-btn">Book now</button>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-sm-6 col-md-4 mb-30 pd-20 show-on-scroll from-bottom" animation-delay="0.2s">
+                                <div class="service-wrapper">
+                                    <div class="service-text">
+                                        <i class="fas fa-poll"></i>
+                                        <h2>Marketing</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Perferendis, similique beatae reprehenderit, atque totam 
+                                            amet distinctio quod nostrum molestiae soluta aliquam
+                                        </p>
+                                    </div>
+                                    <button class="button service-btn">Book now</button>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-sm-6 col-md-4 mb-30 pd-20 show-on-scroll from-bottom" animation-delay="0.4s">
+                                <div class="service-wrapper">
+                                    <div class="service-text">
+                                        <i class="fab fa-windows"></i>
+                                        <h2>Window App</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Perferendis, similique beatae reprehenderit, atque totam 
+                                            amet distinctio quod nostrum molestiae soluta aliquam
+                                        </p>
+                                    </div>
+                                    <button class="button service-btn">Book now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END SERVICES -->
+
+        <!-- PORTFOLIO -->
+        <div class="container-fluid col py-3 portfolio" id="portfolio">
+            <div class="full-overlay" id='full-overlay'>
+                <div class="detail-portfolio">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="detail-info">
+                                <h3>E-Commerce Website</h3>
+                                <span class="detail-info__description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, consequuntur ex iste quas autem, a recusandae beatae eveniet, voluptates optio maiores exercitationem sint. Quod quibusdam magni doloribus perferendis, quisquam harum.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quaerat, dolores cum sit quo consequuntur repellat facilis nisi perferendis odit fugit laborum quisquam quam reiciendis amet atque, cumque dolorem nihil.
+                                </span>
+                                <span class="detail-info__date"><b>Date: </b>18/01/2021</span>
+                                <span class="detail-info__technology"><b>Technology: </b>ASP.NET CORE, Angular, SQL server</span>
+                                <div class="btn-wrapper">
+                                    <button class="button detail-info__btn">View Demo</button>
+                                    <button class="button close-btn">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="close-wrapper">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-90">
+                <div class="col-sm-12">
+                    <h1 class="title">PORTFOLIO</h1>
+                    <div class="portfolio__menu">
+                        <button class="button portfolio__menu-btn btn-active" id='all'>All</button>
+                        <button class="button portfolio__menu-btn" id='web'>Web design</button>
+                        <button class="button portfolio__menu-btn" id='window'>Window App</button>
+                        <button class="button portfolio__menu-btn" id='mobile'>Mobile App</button>
+                    </div>
+                    <div class="wrapper pb-90" id="portfolio-wrapper">
+                        <div class="row center-align" id="portfolio__row">
+                            <!-- column -->
+                            <div class="col-md-4 col-sm-6 pd-20 portfolio-wrapper web show-on-scroll from-right" animation-delay="0s">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__img-wrapper">
+                                        <img class="portfolio__img" src="img/Desktop app 2.jpg">
+                                        <div class="overlay">
+                                            <button class="button overlay__btn">Detail</button>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <span class="portfolio__name">Web Design</span>
+                                        <h4 class="portfolio__title">Design themes for Web applications</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-md-4 col-sm-6 pd-20 portfolio-wrapper window show-on-scroll from-right" animation-delay="0.15s">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__img-wrapper">
+                                        <img class="portfolio__img" src="img/Web app.jpg">
+                                        <div class="overlay">
+                                            <button class="button overlay__btn">Detail</button>      
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <span class="portfolio__name">Windows App</span>
+                                        <h4 class="portfolio__title">Information Management Applications</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-md-4 col-sm-6 pd-20 portfolio-wrapper mobile show-on-scroll from-right" animation-delay="0.3s">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__img-wrapper">
+                                        <img class="portfolio__img" src="img/mobile.jpg">
+                                        <div class="overlay">
+                                            <button class="button overlay__btn">Detail</button>      
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <span class="portfolio__name">Mobile App</span>
+                                        <h4 class="portfolio__title">App, Games for Android, IOS</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-md-4 col-sm-6 pd-20 portfolio-wrapper mobile show-on-scroll from-right" animation-delay="0.45s">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__img-wrapper">
+                                        <img class="portfolio__img" src="img/Mobile app 1.jpg">
+                                        <div class="overlay">
+                                            <button class="button overlay__btn">Detail</button>      
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <span class="portfolio__name">Mobile App</span>
+                                        <h4 class="portfolio__title">App, Games for Android, IOS</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-md-4 col-sm-6 pd-20 portfolio-wrapper web show-on-scroll from-right" animation-delay="0.6s">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__img-wrapper">
+                                        <img class="portfolio__img" src="img/Desktop app 1.jpg">
+                                        <div class="overlay">
+                                            <button class="button overlay__btn">Detail</button>      
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <span class="portfolio__name">Web Design</span>
+                                        <h4 class="portfolio__title">Information Management Applications</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- column -->
+                            <div class="col-md-4 col-sm-6 pd-20 portfolio-wrapper web show-on-scroll from-right" animation-delay="0.75s">
+                                <div class="portfolio__item">
+                                    <div class="portfolio__img-wrapper">
+                                        <img class="portfolio__img" src="img/Web app.jpg">
+                                        <div class="overlay">
+                                            <button class="button overlay__btn">Detail</button>      
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <span class="portfolio__name">Web Design</span>
+                                        <h4 class="portfolio__title">Landing Page, E-Commerce Web Apps</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END PORTFOLIO -->
+
+        <!-- ACHIEVEMENT -->
+        <div class="container-fluid achievement">
+            <div class="wrapper">
+                <div class="row">
+                    <!-- column -->
+                    <div class="col-md-3 col-6">
+                        <div class="achievement-wrapper">
+                            <i class="fas fa-mug-hot"></i>
+                            <h2 value="3000">0</h2>
+                            <h5>Cups of coffee</h3>
+                        </div>
+                    </div>
+
+                    <!-- column -->
+                    <div class="col-md-3 col-6">
+                        <div class="achievement-wrapper">
+                            <i class="far fa-folder-open"></i>
+                            <h2 value="1250">0</h2>
+                            <h5>Projects</h3>
+                        </div>
+                    </div>
+
+                    <!-- column -->
+                    <div class="col-md-3 col-6">
+                        <div class="achievement-wrapper">
+                            <i class="fas fa-user"></i>
+                            <h2 value="2000">0</h2>
+                            <h5>Customers</h3>
+                        </div>
+                    </div>
+
+                    <!-- column -->
+                    <div class="col-md-3 col-6">
+                        <div class="achievement-wrapper">
+                            <i class="fas fa-hands-helping"></i>
+                            <h2 value="500">0</h2>
+                            <h5>Partners</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END ACHIEVEMENT -->
+
+        <!-- MY CLIENTS -->
+        <div class="container-fluid col pb-90 clients" id="clients">
+            <div class="row pt-90">
+                <div class="col-sm-12">
+                    <h1 class="title">MY CLIENTS</h1>
+                </div>
+            </div>
+            <div class="wrapper pb-90">
+                <div id="myCarousel" class="carousel slide show-on-scroll from-scale-0" data-bs-ride="carousel" data-bs-touch="true">
+                    <div class="carousel-indicators cv-indicators">
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="cv-indicator__btn active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" class="cv-indicator__btn" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" class="cv-indicator__btn" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <!-- item -->
+                        <div class="carousel-item active">
+                            <div class="row client-row">
+                                <div class="col-12">
+                                    <div class="small-wrapper">
+                                        <div class="client-wrapper">
+                                            <img src="./img/Bread color.jpg" alt="" class="client__img">
+                                            <span class="client__name">
+                                                <b>Bread Dang</b>
+                                            </span>
+                                            <span class="client__company">
+                                                Google
+                                            </span>
+                                            <p class="client__content">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                Numquam ullam sed quidem velit mollitia, accusamus, inventore 
+                                                esse, officiis officia minima placeat amet nisi tempore modi 
+                                                culpa magnam! Sint, animi consectetur.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="carousel-item">
+                            <div class="row client-row">
+                                <div class="col-12">
+                                    <div class="small-wrapper">
+                                        <div class="client-wrapper">
+                                            <img src="./img/An.jpg" alt="" class="client__img">
+                                            <span class="client__name">
+                                                <b>An An</b>
+                                            </span>
+                                            <span class="client__company">
+                                                Microsoft
+                                            </span>
+                                            <p class="client__content">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                Numquam ullam sed quidem velit mollitia, accusamus, inventore 
+                                                esse, officiis officia minima placeat amet nisi tempore modi 
+                                                culpa magnam! Sint, animi consectetur.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="carousel-item">
+                            <div class="row client-row">
+                                <div class="col-12">
+                                    <div class="small-wrapper">
+                                        <div class="client-wrapper">
+                                            <img src="./img/Duong.jpg" alt="" class="client__img">
+                                            <span class="client__name">
+                                                <b>Duong Dang</b>
+                                            </span>
+                                            <span class="client__company">
+                                                Facebook
+                                            </span>
+                                            <p class="client__content">
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                                Numquam ullam sed quidem velit mollitia, accusamus, inventore 
+                                                esse, officiis officia minima placeat amet nisi tempore modi 
+                                                culpa magnam! Sint, animi consectetur.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CLIENTS -->
+
+        <!-- CONTACT -->
+        <div class="container-fluid col pb-90 pt-90 contact" id="contact">
+            <div class="wrapper">
+                <h1 class="title">CONTACT</h1>
+                <div class="row">
+                    <div class="col-md-6 show-on-scroll from-bottom" animation-delay="0s">
+                        <div class="contact__info">
+                            <div class="contact__info-wrapper">
+                                <i class="far fa-envelope circle-wrapper"></i>
+                                <span>duongdang@gmail.com</span>
+                            </div>
+                            <div class="contact__info-wrapper">
+                                <i class="fas fa-mobile-alt circle-wrapper"></i>
+                                <span>0987654321</span>
+                            </div>
+                            <div class="contact__info-wrapper">
+                                <i class="fas fa-map-marker-alt circle-wrapper"></i>
+                                <span>Hanoi, Vietnam</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 show-on-scroll from-bottom" animation-delay="0s">
+                        <form action="" class="contact__form">
+                            <div class="mb-26">
+                                <input type="email" required="true" class="form-control contact__email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email address">
+                            </div>
+                            <div class="mb-26">
+                                <input type="text" required="true" class="form-control contact__password" id="exampleInputPassword1" placeholder="Your name">
+                            </div>
+                            <div class="mb-26">
+                                <textarea required="true" class="form-control contact__message" placeholder="Your message"></textarea>
+                            </div>
+                            <button type="submit"  class="button">SEND MESSAGE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END CONTACT -->
+
+        <!-- FOOTER -->
+        <footer>
+            <span class="connect">
+               Connect with me
+            </span>
+            <div class="social-network">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-google"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-skype"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <span class="copyright">
+                © Copyright 2022 by Duong Dang 
+            </span>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

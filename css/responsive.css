@@ -1,0 +1,49 @@
+@media (max-width: 992px) {
+    .full-overlay {
+        overflow: scroll;
+    }
+
+    .my-bg-dark {
+        background-color: #212529;
+        top: 0;
+    }
+
+    .navbar-right {
+        margin-top: 10px;
+    }
+
+    .cv-link {
+        padding-left: 16px !important;
+    }
+
+    .cv-link i {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 360px) {
+    .introduce__name {
+        font-size: 50px;
+    }
+
+    .introduce__job {
+        font-size: 40px;
+    }
+
+    .hobbies {
+        width: 120px;
+        height: 135px;
+        margin: 20px auto;
+    }
+}
+
+/* Rotate device */
+@media (max-width: 520px), (max-height: 590px) {
+    .detail-info__btn,
+    .close-btn {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
